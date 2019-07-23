@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-// C:\Users\rajaz\IdeaProjects\project-gutenberg\src\textresources\odyssey.txt
 
 public class TextAnalyzer {
     HashMap<String, Integer> wordsMap;
@@ -38,7 +37,7 @@ public class TextAnalyzer {
     public List<List<String>> get20MostFrequentWords() {
         List<String> words = new ArrayList<>(wordsMap.keySet());
         //sort in descending order
-        Collections.sort(words, (a,b)->wordsMap.get(b)-wordsMap.get(a));
+        Collections.sort(words, (a, b)->wordsMap.get(b)-wordsMap.get(a));
         List<List<String>> wordCount = new ArrayList<>();
         for(int i = 0; i < 20; i ++) {
             List<String> wCount = Arrays.asList(
