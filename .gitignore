@@ -61,4 +61,8 @@ local.properties
 # PDT-specific
 .buildpath
 
+# For Intellij
+.classpath
+.project
+.settings/
 target/
